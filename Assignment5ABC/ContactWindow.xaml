@@ -8,12 +8,12 @@
         Title="ContactWindow" Height="500" Width="400">
 
     <StackPanel>
-        <GroupBox>
+        <GroupBox Header="Name" Margin="5">
             <StackPanel>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -21,13 +21,73 @@
                     </Grid.RowDefinitions>
                 <Label Content="First Name" Grid.Column="0" Grid.Row="0"/>
                 <Label Content="Last Name" Grid.Column="0" Grid.Row="1"/>
-                <TextBlock Text="asd" Grid.Column="1" Grid.Row="0" />
-                <TextBlock Text="asd" Grid.Column="1" Grid.Row="1" />
+                <TextBox  Grid.Column="1" Grid.Row="0" Margin="5" />
+                    <TextBox  Grid.Column="1" Grid.Row="1" Margin="5"/>
             </Grid>
-            
-                
-               
             </StackPanel>
         </GroupBox>
+            
+        <GroupBox Header="Email and Phone" Margin="5 ">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Home phone" Grid.Column="0" Grid.Row="0" />
+                        <Label Content="Cell phone" Grid.Column="0" Grid.Row="1"/>
+                        <Label Content="Email business" Grid.Column="0" Grid.Row="2"/>
+                        <Label Content="Email private" Grid.Column="0" Grid.Row="3"/>
+                        <TextBox Grid.Column="1" Grid.Row="0" Margin="5"/>
+                        <TextBox Grid.Column="1" Grid.Row="1" Margin="5" />
+                        <TextBox Grid.Column="1" Grid.Row="2" Margin="5" />
+                        <TextBox Grid.Column="1" Grid.Row="3" Margin="5" />
+                    </Grid>
+                </GroupBox>
+
+        <GroupBox Header="Adress" Margin="5 ">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Street" Grid.Column="0" Grid.Row="0"/>
+                <Label Content="City" Grid.Column="0" Grid.Row="1"/>
+                <Label Content="Zip code" Grid.Column="0" Grid.Row="2"/>
+                <Label Content="Country" Grid.Column="0" Grid.Row="3"/>
+                <TextBox Grid.Column="1" Grid.Row="0" Margin="5" />
+                <TextBox Grid.Column="1" Grid.Row="1" Margin="5" />
+                <TextBox Grid.Column="1" Grid.Row="2" Margin="5"/>
+                <TextBox Grid.Column="1" Grid.Row="3" Margin="5"/>
+            </Grid>
+        </GroupBox>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="ok" Grid.Column="1" Margin="5"/>
+            <Button Content="Cancel" Grid.Column="2" Margin="5"/>
+            
+        </Grid>
+
+
+
     </StackPanel>
+        
+    
 </Window>
