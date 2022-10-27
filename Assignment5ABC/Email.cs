@@ -11,7 +11,7 @@ namespace Assignment5ABC
         private string _emailPersonal;
         private string _emailWork;
 
-        public Email()
+        public Email(): this(String.Empty, string.Empty)
         {
 
         }
@@ -23,6 +23,24 @@ namespace Assignment5ABC
         {
             _emailPersonal = emailPersonal;
             _emailWork = emailWork;
+        }
+
+        public string EmailPersonal 
+        { 
+            get { return _emailPersonal; } 
+            set { _emailPersonal = value; } 
+        }
+        public string EmailWork 
+        { 
+            get { return _emailWork; } 
+            set { _emailWork = value; } 
+        }
+
+        public override string ToString()
+        {
+            string toString = string.Format("{0}", _emailWork);
+            return toString;
+
         }
     }
 }

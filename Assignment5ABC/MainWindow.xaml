@@ -27,8 +27,8 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ListBox Height="300" Grid.Column="0" Margin="0 0 5 0"/>
-            <ListBox Height="300" Grid.Column="1"/>
+            <ListBox x:Name="lstCustomers" Height="300" Grid.Column="0" Margin="0 0 5 0" SelectionChanged="lstCustomers_SelectionChanged"/>
+            <ListBox x:Name="lstCustomerDetails" Height="300" Grid.Column="1" />
         </Grid>
 
         <Grid>
@@ -39,9 +39,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Add" Grid.Column="0" Margin="0 0 5 0"/>
-            <Button Content="Edit" Grid.Column="1" Margin = "0 0 5 0"/>
-            <Button Content="Delete" Grid.Column="2"/>
+            <Button x:Name="btnAdd" Content="Add" Grid.Column="0" Margin="0 0 5 0" Click="btnAdd_Click"/>
+            <Button x:Name="btnEdit" Content="Edit" Grid.Column="1" Margin = "0 0 5 0" Click="btnEdit_Click"/>
+            <Button x:Name="btnDelete" Content="Delete" Grid.Column="2" Height="20" VerticalAlignment="Top" Click="btnDelete_Click"/>
         </Grid>
 
 
