@@ -70,7 +70,7 @@ namespace Assignment5ABC
 
         public override string ToString()
         {
-            string toString = string.Format("{0} {1} {2}",FullName,_phone.ToString(),_email.ToString());
+            string toString = string.Format("{0,-55} {1,-55} {2}",FullName,_phone.ToString(),_email.ToString());
             return toString;
         }
     }

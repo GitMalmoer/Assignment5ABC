@@ -37,8 +37,32 @@ namespace Assignment5ABC
 
         public Countries Country
         {
-            get { return _country; } set { _country = value; } 
+            get 
+            { return _country; } 
+            set 
+            { _country = value; } 
         }
+
+        public string CountryString
+        {
+            get { return CountryToString(); }
+        }
+
+        public string CountryToString()
+        {
+            string countryString = _country.ToString();
+            if(_country.ToString().Contains('_'))
+            {
+                countryString = _country.ToString().Replace('_', ' ');
+                return countryString;
+            }
+            else
+            {
+                return countryString;
+            }
+        }
+
+
 
     }
 }

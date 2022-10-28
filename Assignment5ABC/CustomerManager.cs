@@ -32,11 +32,6 @@ namespace Assignment5ABC
             if (CheckIndex(index))
             {
                 _customerList.RemoveAt(index);
-                _id--;
-            }
-            else
-            {
-
             }
         }
         public Customer GetCustomerFromList(int index)
@@ -55,7 +50,6 @@ namespace Assignment5ABC
 
         public void EditCustomerInList(Customer customer, int index)
         {
-           // int id = customer.Id;
             if(CheckIndex(index) && customer != null)
             {
                 _customerList[index] = customer;
